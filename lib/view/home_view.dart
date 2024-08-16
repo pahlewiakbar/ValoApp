@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:myproject/view/agent_view.dart';
-import 'package:myproject/view/weapon_view.dart';
-import 'package:myproject/view/maps_view.dart';
-import 'package:myproject/view/mode_view.dart';
+
+import 'agent_view.dart';
+import 'maps_view.dart';
+import 'mode_view.dart';
+import 'weapon_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -71,7 +72,7 @@ class HomeView extends StatelessWidget {
                           Text(
                             'AGENT',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 17,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )
@@ -112,7 +113,7 @@ class HomeView extends StatelessWidget {
                           const Text(
                             'ARSENAL',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 17,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )
@@ -153,7 +154,7 @@ class HomeView extends StatelessWidget {
                           const Text(
                             'MAPS',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 17,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )
@@ -194,7 +195,7 @@ class HomeView extends StatelessWidget {
                           const Text(
                             'MODE',
                             style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 17,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           )

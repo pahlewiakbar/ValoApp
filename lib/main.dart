@@ -12,12 +12,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'ValoApp',
       debugShowCheckedModeBanner: false,
+      home: const SplashScreen(),
       theme: ThemeData(
           pageTransitionsTheme: const PageTransitionsTheme(builders: {
         TargetPlatform.android: CupertinoPageTransitionsBuilder()
       })),
-      home: const SplashScreen(),
     );
   }
 }
