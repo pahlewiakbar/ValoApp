@@ -18,14 +18,14 @@ class WeaponView extends StatelessWidget {
       body: FutureBuilder(
         future: controller.allWeapon(),
         builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
           if (snapshot.hasError) {
             return const Center(
               child: Text('failed to get data'),
+            );
+          }
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(),
             );
           }
           var data = snapshot.data!;

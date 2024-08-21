@@ -16,14 +16,14 @@ class AgentDetail extends StatelessWidget {
         child: FutureBuilder(
           future: controller.singleAgent(uuid),
           builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
             if (snapshot.hasError) {
               return const Center(
                 child: Text('failed to get data'),
+              );
+            }
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(
+                child: CircularProgressIndicator(),
               );
             }
             var detail = snapshot.data!;
